@@ -1,0 +1,229 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.bg-image {
+    
+    width: 100%;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image:
+    linear-gradient(to bottom, rgba(122, 122, 126, 0.171), rgba(82, 76, 80, 0.247)),
+    url('images/showcase-img.jpeg');    
+    
+}
+
+@media (min-width: 768px) {
+    .bg-image {
+        height: 77vh;
+        background-position: bottom;
+    }
+    
+}
+
+/* @media (max-width: 768px) {
+    #awards{
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  .overlay {
+      background-color: black;
+      opacity: 0.6;
+      z-index: 1;
+  }
+  
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+  /* @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('images/gutgd-bg-2.jpg') black no-repeat center center scroll;
+    }
+  
+    header video {
+      display: none;
+    }
+  } */
+
+
+.text-primary{
+    color: lightblue;
+}
+
+.text-secondary{
+    color: #CB26C2
+}
+
+.short {
+    width: 100%;
+    
+}
+
+.red{
+    background-color: red;
+}
+
+.text-purple{
+    color: #CB26C2
+}
+
+.text-blue {
+    color: #01A7E3;
+}
+
+.bg-blue {
+    background-color: #01A7E3;
+}
+
+.bg-purple {
+    background-color: #CB26C2;
+}
+
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+#book-btn{
+    outline: none;
+    border: none;
+    
+    padding: 1em 1.5em;
+    /* background-image: linear-gradient(to right,#01A7E3, white); */
+    background-color: #01A7E3;
+    
+}
+#book-btn:hover{
+    background-color: #CB26C2;
+    color: rgba(255, 255, 255, 0.897);
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.award-img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: #28a745;
+}
+
+.nav-scrolled{
+    background-color: rgb(151, 140, 140);
+    
+}
+
+.nav-link{
+    color: rgba(255, 255, 255, 0.897) !important;
+}
+
+.nav-link:hover{
+    color: #01A7E3 !important;
+}
+
+
+
+.nav-default{
+    background-color: grey;
+}
+
+.midline {
+    width: 20%;
+    border-top: 4px solid #ff00f2;
+    margin: 0 auto;
+
+}
+
+.midline-hero {
+    width: 40%;
+    margin: 0 auto;
+    border-top: 5px solid #ff00f2;
+}
+
+#ft-wayne-text{
+    color: #ff00f2;
+}
+
+#dj-service-text{
+    color: #01A7E3;
+}
+
+#gradient-sep{
+    background: #282537;
+ background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+ background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+ background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+ background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+}
+
+
+
+
