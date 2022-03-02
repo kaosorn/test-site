@@ -1,5 +1,10 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    position: relative;
 }
 
 .bg-image {
@@ -104,6 +109,7 @@ header {
     
 }
 
+
 .red{
     background-color: red;
 }
@@ -122,7 +128,9 @@ header {
 
 .bg-purple {
     background-color: #CB26C2;
+    color:rgba(255, 255, 255, 0.897)
 }
+
 
 
 .navbar-toggler,
@@ -224,6 +232,14 @@ header {
  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
 }
 
+.award-thumbnail {
+    height: 100px;
+    width: 100px;
+    
+}
 
+.btn-close{
+    color: white;
+}
 
 

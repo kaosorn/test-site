@@ -64,12 +64,12 @@
               </div>
             </div>  -->
 
-  <div id="bookModal" class="modal text-primary" tabindex="-1">
+  <div id="bookModal" class="modal text-blue" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header bg-secondary">
+        <div id="gradient-sep" class="modal-header">
           <h5 class="modal-title">Information Request Form</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
         <div class="modal-body">
           <form>
@@ -80,12 +80,17 @@
             </div>
             
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="password" class="form-control" id="firstName">
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="password" class="form-control" id="lastName">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="details">Event Details</label>
+              <textarea class="form-control" id="details" type="text" placeholder="Tell us about your event..." style="height: 10rem;" data-sb-validations="required"></textarea>
+              <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
             </div>
             
           </form>
@@ -227,25 +232,69 @@
     </div>
 
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <img src="images/award1.jpg" alt="">
+      <div class="row py-2">
+        <div class="col g-1">
+          <img src="images/award1.jpg" class="award-thumbnail rounded-circle" alt="">
         </div>
-        <div class="col">
-          <img src="images/award2.jpg" alt="">
+        <div class="col g-1">
+          <img src="images/award2.jpg" class="award-thumbnail rounded-circle" alt="">
         </div>
-        <div class="col">
-          <img src="images/award3.png" alt="">
+        <div class="col g-1">
+          <img src="images/award3.png" class="award-thumbnail rounded-circle" alt="">
         </div>
       </div>
     </div>
   </section>
 
 
-  <section id="gradient-sep"  class=" bg-secondary text-light text-center p-5 mt-5">
-    <div class="container-fluid">
+  <section class=" bg-dark text-light text-center">
+    <div id="gradient-sep" class="container-fluid py-5">
       <div class="display-3">Contact Us</div>
       <hr class="midline">
+    </div>
+
+    <div class="container py-5 bg-dark">
+      <!-- Bootstrap 5 starter form -->
+  <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+    <!-- Name input -->
+    <div class="mb-3">
+      <!-- <label class="form-label" for="name">Name</label> -->
+      <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+      <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+    </div>
+
+    <!-- Email address input -->
+    <div class="mb-3">
+      <!-- <label class="form-label" for="emailAddress">Email Address</label> -->
+      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+    </div>
+
+    <!-- Message input -->
+    <div class="mb-3">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+      <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+    </div>
+
+    <!-- Form submissions success message -->
+    <div class="d-none" id="submitSuccessMessage">
+      <div class="text-center mb-3">Form submission successful!</div>
+    </div>
+
+    <!-- Form submissions error message -->
+    <div class="d-none" id="submitErrorMessage">
+      <div class="text-center text-danger mb-3">Error sending message!</div>
+    </div>
+
+    <!-- Form submit button -->
+    <div class="d-grid">
+      <button class="btn bg-purple" id="submitButton" type="submit">Submit</button>
+    </div>
+
+  </form>
     </div>
   </section>
 
