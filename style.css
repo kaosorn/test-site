@@ -80,6 +80,10 @@ header {
       opacity: 0.6;
       z-index: 1;
   }
+
+  .overlay video{
+      display: block;
+  }
   
   /* Media Query for devices withi coarse pointers and no hover functionality */
   
