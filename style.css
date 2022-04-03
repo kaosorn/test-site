@@ -28,12 +28,7 @@ body{
     
 }
 
-/* @media (max-width: 768px) {
-    #awards{
-        display: flex;
-        flex-direction: column;
-    }
-} */
+
 
 header {
     position: relative;
@@ -57,8 +52,18 @@ header {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    
   }
   
+  /* @media(max-width: 400px) {
+      header video{
+          display: none;
+      }
+      header{
+          background-color: red;
+      }
+  } */
+
   header .container {
     position: relative;
     z-index: 2;
@@ -81,10 +86,10 @@ header {
       z-index: 1;
   }
 
-  .overlay video{
+  /* .overlay video{
       display: block;
   }
-  
+   */
   /* Media Query for devices withi coarse pointers and no hover functionality */
   
   /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
